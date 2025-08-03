@@ -166,6 +166,8 @@ public function test_product_manager_can_create_product()
 - Budget or costing feature
 - Dockerized deployment
 
+## Time Spent
+I spent approximately 13-14 hours on this challenge, distributed over a few focused sessions. My goal was to balance clean architecture, code quality, UI/UX, and necessary business logic within the given timeframe.
 
 ## Deployment (Optional)
 
@@ -174,6 +176,18 @@ public function test_product_manager_can_create_product()
 
 ## Running Locally
 - clone the git repo: git@github.com:programmerzia/production-tracker.git or https://github.com/programmerzia/production-tracker.git
-- Follow the README from repository
-
-
+## Backend
+```
+    cd backend
+    composer install
+    cp .env.example .env
+    php artisan key:generate
+    php artisan migrate --seed
+    php artisan serve
+```
+## Frontend
+```
+    cd frontend
+    pnpm install
+    pnpm run dev
+```
