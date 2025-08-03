@@ -47,3 +47,11 @@ To regenerate: php artisan scribe:generate (run in backend)
 Backend tests in backend/tests/Feature
 
 Run with php artisan test
+
+## Sample Users Seeded:
+| Name                | Email                  | Role                | Password |
+| ------------------- | ---------------------- | ------------------- | -------- |
+| Product Manager     | [pm@example.com]       | Product Manager     | password |
+| Project Manager     | [pj@example.com]       | Project Manager     | password |
+| Production Engineer | [engineer@example.com] | Production Engineer | password |
+
