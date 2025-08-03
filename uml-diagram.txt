@@ -1,0 +1,33 @@
+@startuml
+class User {
+  +id: int
+  +name: string
+  +email: string
+  +role: string
+}
+
+class Product {
+  +id: int
+  +name: string
+  +version: string
+  +description: string
+  +price: decimal
+}
+
+class Project {
+  +id: int
+  +name: string
+  +description: string
+}
+
+class ProductItem {
+  +id: int
+  +name: string
+  +version: string
+  +status: enum
+}
+
+User "1" -- "*" Product : manages >
+Product "1" -- "*" Project : contains >
+Project "1" -- "*" ProductItem : includes >
+@enduml

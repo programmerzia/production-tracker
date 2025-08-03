@@ -1,0 +1,13 @@
+# Laravel
+/backend/vendor/
+/backend/node_modules/
+/backend/.env
+
+# Nuxt/Node
+/frontend/node_modules/
+/frontend/.nuxt/
+/frontend/.env
+
+# IDE
+.vscode/
+.DS_Store
